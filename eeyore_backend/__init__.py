@@ -1,0 +1,1 @@
+from .search import news_response
