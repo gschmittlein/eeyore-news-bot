@@ -15,11 +15,15 @@ Does what it says in the name. Build an API to have Eeyore read you the news on 
 
 ## Running:
 
-To deploy the API locally, simply open a terminal and navigate to the main eeyore-news-bot folder. Then to run the app enter the command `uvicorn main:app`. The app should launch on a local host. If you add "/docs" to the end of hte local host url, you'll be able to access the FastAPI docs and test the API. You can also test it via curl or any other method. In the FastAPI docs, you'll be able to see the API schema, which are also provided below:
+To deploy the API locally, simply open a terminal and navigate to the main eeyore-news-bot folder. Then to run the app enter the command `uvicorn main:app`. The app should launch on a local host. If you add "/docs" to the end of the local host url, you'll be able to access the FastAPI docs and test the API. You can also test it via curl or any other method. Whether testing via the FastAPI docs, curl, or some other means, you will need to authenticate the API by providing the API Key as defined in config.py. Feel free to update this key as it suits you.
 
+In the FastAPI docs, you'll be able to see the API schema, which I'll provide below as well.
+
+```
 {
   "user_query": "",
   "user_person": ""
 }
+```
 
-This is how the API expects information to be provided. The *user_query* field should be provided with a news topic that you want to search on (for example, "philadelphia eagles" or "taylor swift"). The *user_person* field should be provided with with a character or person who you would like to deliver the news to you (for example, "eeyore" or "tony soprano"). Alas, it is not just an Eeyore news bot. You can get the news from whomever you would like!
+This is how the API expects information to be provided. The **user_query** field should be provided with a news topic that you want to search on (for example, "philadelphia eagles" or "taylor swift"). The **user_person** field should be provided with a character or person who you would like to deliver the news to you (for example, "eeyore" or "tony soprano"). Alas, it is not just an Eeyore news bot. You can get the news from whomever you would like!
