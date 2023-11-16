@@ -1,6 +1,10 @@
 # virtualenv
 eeyore_venv/
 
+# ds store
+.DS_Store
+eeyroe_backend/.DS_Store
+
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]
